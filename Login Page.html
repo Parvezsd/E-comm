@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Home.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About-us.html">About</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="Order Tracking.html">Order Tracking</a></li>
+                        <li><a href="Login Page.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="ShoppingCart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    <div class="Log">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div id="login-form" class="input-group">
+                <form>
+                    <input type="text" class="input-field" placeholder="Enter Username" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required> 
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+            </div>
+            <div id="register-form" class="input-group" style="display: none;">
+                <form>
+                    <input type="text" class="input-field" placeholder="Username" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required> 
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var loginForm = document.getElementById("login-form");
+        var registerForm = document.getElementById("register-form");
+        var btn = document.getElementById("btn");
+
+        function register() {
+            loginForm.style.display = "none";
+            registerForm.style.display = "block";
+            btn.style.left = "110px";
+        }
+
+        function login() {
+            loginForm.style.display = "block";
+            registerForm.style.display = "none";
+            btn.style.left = "0px";
+        }
+    </script>
+    <!-- js for toggle menu -->
+ <script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+ </script>
+</body>
+</html>

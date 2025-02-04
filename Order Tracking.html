@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="order.css">
+    <link href="https://fonts.googleapis.com/css2? 
+    family Poppins:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/
+    fontawesome-free@6.6.0/css/fontawesome.min.css">
+    
+</head>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="About-us.html">About</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="Order Tracking.html">Order Tracking</a></li>
+                    <li><a href="Login Page.html">Login/Register</a></li>
+                </ul>
+            </nav>
+            <a href="ShoppingCart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+<body>
+    <div class="container">
+        <center><h2>Track Your Order</h2><br>
+        <form id="orderForm">
+            <label for="order_id">Enter Order ID:</label><br>
+            <input type="text" id="order_id" name="order_id" placeholder="E.g., ORD12345" required>
+            <br><br>
+            <button type="button" onclick="trackOrder()">Track Order</button>
+        </form>
+    </center>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        // Simulated order data (in place of a real database)
+        const orders = [
+            { order_id: "ORD12345", book_name: "The Great Gatsby", status: "Shipped", delivery_date: "2025-02-05" },
+            { order_id: "ORD67890", book_name: "1984", status: "Delivered", delivery_date: "2025-01-28" },
+            { order_id: "ORD11111", book_name: "To Kill a Mockingbird", status: "Processing", delivery_date: "2025-02-10" },
+        ];
+
+        // Function to track order
+        function trackOrder() {
+            const orderID = document.getElementById("order_id").value.trim();
+            const resultDiv = document.getElementById("result");
+
+            // Find order by ID
+            const order = orders.find(o => o.order_id === orderID);
+
+            // Clear previous result
+            resultDiv.innerHTML = "";
+
+            if (order) {
+                // Display order details
+                resultDiv.innerHTML = `
+                    <p><strong>Order ID:</strong> ${order.order_id}</p>
+                    <p><strong>Book Name:</strong> ${order.book_name}</p>
+                    <p><strong>Status:</strong> ${order.status}</p>
+                    <p><strong>Estimated Delivery:</strong> ${order.delivery_date}</p>
+                `;
+            } else {
+                // Order not found
+                resultDiv.innerHTML = "<p>Order not found. Please check your Order ID.</p>";
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <!-------------------footer------>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our mobile app for online shopping</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <p>Our Purpose is to inform, inspire, entertain, or preserve knowledge and stories for readers.</p>
+            </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 -Easy Tutorials</p>
+    </div>
+</div>
+<!-- js for toggle menu -->
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle() {
+            if(MenuItems.style.maxHeight=="0px"){
+                
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+    
+        }
+     </script>
+</body>
+</html>

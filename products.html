@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Home.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About-us.html">About</a></li>
+                        <!-- <li><a href="">Contact</a></li> -->
+                        <li><a href="">Account</a></li>
+                        <li><a href="Order Tracking.html">Order Tracking</a></li>
+                        <li><a href="Login Page.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="ShoppingCart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+<div class="small-container">
+    
+    <div class="row row-2">
+        <h2>Your Next Favorite Book Awaits!</h2>
+        <select>
+            <option>Default Sorting</option>
+            <option>Sort by price</option>
+            <option>Sort by popularity</option>
+            <option>Sort by sale</option>
+        </select>
+    </div>
+
+    <!-- Fiction Books -->
+    <h3 class="category-title">📖 Fiction</h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/book.jpeg">
+            <h4>The Great Adventure</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 450</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/KM.jpg">
+            <h4>To Kill a Mockingbird</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs. 500</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/1984.jpg">
+            <h4>1984</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 400</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/PP.jpg">
+            <h4>Pride and Prejudice</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 350</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/ca.jpg">
+            <h4>The Catcher in the Rye</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 380</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Non-Fiction Books -->
+    <h3 class="category-title">📚 Non-Fiction</h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/Sa.jpg">
+            <h4>Sapiens</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 600</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/et.jpg">
+            <h4>Educated</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 550</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/at.jpg">
+            <h4>Atomic Habits</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 480</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/be.jpg">
+            <h4>Becoming</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 700</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/pn.jpg">
+            <h4>The Power of Now</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 350</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Science & Technology -->
+    <h3 class="category-title">🔬 Science & Technology</h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/sci.jpg">
+            <h4>A Brief History of Time</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 500</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci2.jpeg">
+            <h4>The Selfish Gene</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 480</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci3.jpeg">
+            <h4>Astrophysics for People in a Hurry</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 400</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci4.jpeg">
+            <h4>Cosmos</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 550</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci5.jpeg">
+            <h4>Einstein: His Life and Universe</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 450</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Self-Help Books -->
+    <h3 class="category-title">💡 Self-Help</h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/sci6.jpeg">
+            <h4>The 7 Habits of Highly Effective People</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 550</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci7.jpeg">
+            <h4>Think and Grow Rich</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 400</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci8.jpeg">
+            <h4>The Subtle Art of Not Giving a F*ck</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 450</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci9.png">
+            <h4>How to Win Friends and Influence People</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 380</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci10.jpeg">
+            <h4>Daring Greatly</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 500</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mystery & Thriller -->
+    <h3 class="category-title">🕵️‍♂️ Mystery & Thriller</h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/sci11.jpeg">
+            <h4>Gone Girl</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 450</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci12.jpeg">
+            <h4>The Girl with the Dragon Tattoo</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 500</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci13.jpeg">
+            <h4>Big Little Lies</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 400</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci14.jpeg">
+            <h4>The Silent Patient</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 550</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/sci15.jpeg">
+            <h4>Before We Were Strangers</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p>Rs. 480</p>
+            <div class="button-container">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-------------------footer------>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our mobile app for online shopping</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <p>Our Purpose is to inform, inspire, entertain, or preserve knowledge and stories for readers.</p>
+            </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 -Easy Tutorials</p>
+    </div>
+</div>
+<!-- js for toggle menu -->
+ <script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight=="0px"){
+            
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+
+    }
+ </script>
+
+</body>
+</html>
